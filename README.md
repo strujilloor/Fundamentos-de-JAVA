@@ -87,3 +87,26 @@ saludo.equals("Hola Mundo");
   </tr>
 </table>
 
+___
+# Concatenación en Java
+
+```Java
+public class Main
+{
+  public static void main(String[] args)
+  {
+    String usuario = "Stiven";
+    String saludar = "Hola";
+    
+    System.out.println( saludar + " " + usuario );
+    // output: Hola Stiven
+    
+    System.out.println( "Hola mi nombre es: " + usuario );
+    // output: Hola mi nombre es: Stiven
+    
+    //shortcut: soutv
+    System.out.println( "saludar = " + saludar );
+    // output: saludar = Hola
+  }
+}
+```
