@@ -110,3 +110,38 @@ public class Main
   }
 }
 ```
+___
+# Caracteres Especiales en Java (Ejercicio) 
+
+```Java
+public class Main
+{
+  public static void main(String[] args)
+  {
+    String nombre = "Lisbeth";
+    String apellido = "Cifuentes";
+    
+    System.out.println( nombre + "\t" + apellido ); // output: Lisbeth Cifuentes
+    
+    System.out.println( "Nueva linea: \n" + nombre ); 
+    // output: Nueva linea: 
+    // Lisbeth
+    
+    System.out.println( "tabulador: \t" + nombre ); 
+    // output: tabulador: 	Lisbeth
+    
+    System.out.println( "retroceso: \b" + nombre ); 
+    // output: retroceso:Lisbeth
+    
+    System.out.println( "retorno de carro: \r" + nombre ); // note: se va al inicio de esta linea
+    // output: Lisbeth
+    
+    System.out.println( "comilla simple: \'" + nombre + "\'"); 
+    // output: comilla simple: 'Lisbeth'
+    
+    System.out.println( "comilla doble: \"" + nombre + "\"" ); 
+    // output: comilla doble: "Lisbeth"
+    
+  }
+}
+```
