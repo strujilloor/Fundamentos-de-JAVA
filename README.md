@@ -145,3 +145,22 @@ public class Main
   }
 }
 ```
+___
+# Clase Scanner en Java
+
+Capturar información desde la consola del usuario.
+
+```Java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // definir una variable para poder leer los valores que proporcione el usuario
+        
+        System.out.println("Proporciona tu nombre:"); // indiquemos al usuario que debe proporcionarlo
+        String usuario = scanner.nextLine(); 
+        String saludar = "Saludos";
+        System.out.println(saludar + " " + usuario);
+    }
+}
+```
