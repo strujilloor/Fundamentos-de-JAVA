@@ -164,3 +164,46 @@ public class Main {
     }
 }
 ```
+___
+# Conversión de tipos primitivos en Java
+
+```Java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // String to Double
+        double valorPi = Double.parseDouble("3.14"); 
+        System.out.println("valorPi = " + valorPi);
+        // output: valorPi = 3.14
+
+        // String to char
+        char c = "hola".charAt(0); // charAt(indice de la cadena)
+        System.out.println("c = " + c);
+        // output: c = h
+
+        // Ejemplo: 
+        Scanner scanner = new Scanner(System.in);
+        char caracter = scanner.nextLine().charAt(0); // de una cadena ingresada por el usuario, toma el primer character
+        System.out.println("caracter = " + caracter);
+
+        // Tipo primitivo to String
+        String valorPiTexto = String.valueOf(valorPi);
+        System.out.println("valorPiTexto = " + valorPiTexto);
+
+        // También se puede hacer de esta forma
+        String valorPiTexto2 = "" + valorPi;
+        System.out.println("valorPiTexto2 = " + valorPiTexto2);
+
+        // Podemos meter un tipo byte dentro de un short
+        byte b = 10;
+        short s = b;
+
+        // Error: pero no podemos meter un short dentro de un byte por su tamaño
+        short s2 = 15;
+        byte b2 = (byte) s2; // pero podemos hacer un Casting de esta forma
+        // si tenemos una expresión debemos meterla en parentesis: (byte) (s2 + 1)
+    }
+}
+
+```
